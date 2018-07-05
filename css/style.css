@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+body.dark-mode {
+  background-color: #111;
+  color: #eee;
+}
+body.dark-mode a {
+  color: #111;
+}
+body.dark-mode button {
+  background-color: #eee;
+  color: #111;
+}
+body.dark-mode .right {
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #1A6079, 0 0 35px #1A6079, 0 0 40px #1A6079, 0 0 50px #1A6079, 0 0 75px #1A6079;
+}
+body.dark-mode .bottom {
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #1A6079, 0 0 35px #1A6079, 0 0 40px #1A6079, 0 0 50px #1A6079, 0 0 75px #1A6079;
+}
+body.dark-mode .square {
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #1A6079, 0 0 35px #1A6079, 0 0 40px #1A6079, 0 0 50px #1A6079, 0 0 75px #1A6079;
+}
+
+body.light-mode {
+  background-color: #eee;
+  color: #111;
+}
+body.light-mode a {
+  color: #111;
+}
+body.light-mode button {
+  background-color: #111;
+  color: #eee;
+}
+
+body {
+  background-color: white;
+  font-family: verdana, sans-serif;
+  color: #1A6079;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+#gameBoard {
+  margin-top: 10px;
+}
+
+.row {
+  font-size: 0px;
+}
+
+td {
+  display: inline-block;
+  font-size: 90px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: top;
+  line-height: 100px;
+  cursor: pointer;
+  bottom: 20px;
+}
+
+.right {
+  border-right: solid 5px #1A6079;
+}
+
+.bottom {
+  border-bottom: solid 5px #1A6079;
+}
+
+.icons points {
+  display: inline-block;
+  width: 20%;
+  font-size: 35px;
+  float: left;
+}
+
+.points {
+  font-size: 35px;
+  width: 96%;
+  display: inline-block;
+  float: left;
+  line-height: 1;
+}
+
+.oscore-value {
+  color: #0099FF;
+}
+
+.tie-value {
+  color: #FFCC00;
+}
+
+.xscore-value {
+  color: #66FF00;
+}
+
+.square {
+  color: #0099FF;
+  font-family: 'Comfortaa', cursive;
+}
+
+table {
+  position: absolute;
+  left: 50%;
+  margin-left: -155px;
+  top: 200px;
+}
+
+td:hover {
+  background-color: rgba(121, 156, 173, 0.5);
+}
+
+.message {
+  display: none;
+  width: 210px;
+  top: 300px;
+  background-color: rgba(121, 156, 173, 0.8);
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 2em;
+}
+
+.controls {
+  height: 50px;
+  background-color: #799cad;
+  width: 500px;
+  padding: 20px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 12px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.select-btn {
+  text-align: center;
+  width: 110px;
+  font-weight: 800;
+}
+
+.level {
+  text-align: center;
+  width: 170px;
+  font-weight: 800;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 25px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  background-color: #1A6079;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #282828;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(34px);
+  -ms-transform: translateX(34px);
+  transform: translateX(34px);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.scoreBoard {
+  background-color: black;
+  width: 500px;
+  height: 50px;
+  padding: 20px;
+  position: absolute;
+  top: 550px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 12px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 450px) {
+  .controls {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 95px;
+    width: 100%;
+    top: 50px;
+  }
+
+  .gameBoard {
+    top: 100%;
+    width: 100%;
+  }
+
+  .message {
+    top: 270px;
+  }
+
+  .scoreBoard {
+    bottom: 150px;
+    height: 25px;
+  }
+}
